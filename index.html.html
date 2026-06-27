@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前瞻建設亮點 ｜ 20大亮點 × 全臺22縣市實錄</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0D2730;--ink-2:#143843;--paper:#EFEEE6;--paper-2:#F6F5EF;--line:#C9CCC4;
+    --life:#E3A02E;--human:#C45A4A;--tech:#1F94AB;--green:#5C9E63;--txt:#0D2730;--txt-soft:#46585F;--txt-inv:#F2F1E8;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Noto Sans TC",sans-serif;background:var(--paper);color:var(--txt);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  a{color:inherit}
+  .hero{background:var(--ink);color:var(--txt-inv);position:relative;overflow:hidden;padding:60px 0}
+  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(ellipse 80% 70% at 72% 28%,#000,transparent);pointer-events:none}
+  .hero .wrap{position:relative;z-index:1}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--life);margin-bottom:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .eyebrow span:last-child{color:#8FA7AE;letter-spacing:.16em}
+  .hero h1{font-weight:900;font-size:clamp(34px,7.2vw,64px);line-height:1.08;margin-bottom:18px}
+  .hero h1 em{font-style:normal;color:var(--life)}
+  .hero .lede{max-width:620px;color:#C7D2D5;font-size:clamp(15px,2.4vw,18px);margin-bottom:42px}
+  .hero-stats{display:flex;gap:34px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.16);padding-top:26px}
+  .hstat .n{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:clamp(40px,8vw,68px);line-height:.85;color:#fff}
+  .hstat .n small{font-size:18px;font-weight:700;margin-left:4px;color:var(--life)}
+  .hstat .l{font-family:"Space Mono",monospace;font-size:12px;color:#8FA7AE;letter-spacing:.06em;margin-top:8px}
+  section{padding:64px 0}
+  .sec-head{margin-bottom:30px;max-width:760px}
+  .sec-tag{font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:14px;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;margin-bottom:13px;color:var(--life)}
+  .sec-tag::before{content:"";width:26px;height:3px;background:currentColor}
+  .sec-head h2{font-weight:900;font-size:clamp(25px,4.6vw,38px);line-height:1.2}
+  .sec-head p{color:var(--txt-soft);margin-top:11px;font-size:15px}
+  .legend{display:flex;gap:14px 18px;flex-wrap:wrap;margin-bottom:8px}
+  .legend b{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;font-family:"Space Mono",monospace}
+  .legend b i{width:12px;height:12px;border-radius:3px}
+  /* distribution */
+  .dist{background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:22px 22px 10px}
+  .dist-row{display:grid;grid-template-columns:64px 1fr 44px;align-items:center;gap:12px;margin-bottom:12px}
+  .dist-l{font-size:13.5px;font-weight:700}
+  .dist-bar{height:16px;background:#E5E7DF;border-radius:3px;overflow:hidden}
+  .dist-bar i{display:block;height:100%;width:0;border-radius:3px;transition:width 1s cubic-bezier(.2,.7,.2,1)}
+  .dist-n{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:20px;text-align:right;font-variant-numeric:tabular-nums}
+  /* 20 highlights */
+  .grp-head{display:flex;align-items:center;gap:16px;margin:38px 0 18px}
+  .grp-head .gn{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:30px;letter-spacing:.06em}
+  .grp-head .gl{flex:1;height:2px}
+  .grp-head .gt{font-family:"Space Mono",monospace;font-size:12px;color:var(--txt-soft)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .card{background:var(--paper-2);border:1px solid var(--line);border-left-width:4px;border-radius:4px;padding:22px 20px;display:flex;flex-direction:column}
+  .card .ct{font-family:"Space Mono",monospace;font-size:11px;color:var(--txt-soft);letter-spacing:.06em;margin-bottom:10px}
+  .card h4{font-size:17px;font-weight:700;line-height:1.35;margin-bottom:10px}
+  .card .desc{font-size:13px;color:var(--txt-soft);line-height:1.6;margin-bottom:16px;flex:1}
+  .card .fig{border-top:1px dashed var(--line);padding-top:13px}
+  .card .fig .v{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:30px;line-height:1}
+  .card .fig .v small{font-size:14px;font-weight:700;margin-left:2px}
+  .card .fig .k{font-size:12px;color:var(--txt-soft);margin-top:4px}
+  .l-life{border-left-color:var(--life)} .l-life .v{color:var(--life)} .l-life .ct b{color:var(--life)}
+  .l-human{border-left-color:var(--human)} .l-human .v{color:var(--human)} .l-human .ct b{color:var(--human)}
+  .l-tech{border-left-color:var(--tech)} .l-tech .v{color:var(--tech)} .l-tech .ct b{color:var(--tech)}
+  /* counties */
+  .counties{background:var(--ink);color:var(--txt-inv)}
+  .counties .sec-tag{color:var(--life)} .counties .sec-head h2{color:#fff} .counties .sec-head p{color:#9DB2B8}
+  .county-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:6px 0 2px}
+  .toggle-all{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.04em;color:var(--ink);background:var(--life);border:none;border-radius:100px;padding:8px 16px;cursor:pointer;font-weight:700}
+  .hint{font-size:13px;color:#9DB2B8}
+  .region{margin-top:30px}
+  .region-head{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.14)}
+  .region-head .rn{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:26px;letter-spacing:.04em}
+  .region-head .rc{font-family:"Space Mono",monospace;font-size:12px;color:#9DB2B8}
+  .ccards{column-count:2;column-gap:12px}
+  details.cc{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;margin:0 0 12px;display:block;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden}
+  details.cc[open]{background:rgba(255,255,255,.06)}
+  details.cc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:14px 16px;flex-wrap:wrap}
+  details.cc>summary::-webkit-details-marker{display:none}
+  .cc .city{font-size:17px;font-weight:900;color:#fff}
+  .cc .badge{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink);background:var(--life);border-radius:100px;padding:3px 9px;font-weight:700;white-space:nowrap}
+  .cc .tdots{display:inline-flex;gap:3px;margin-left:2px}
+  .cc .tdot{width:9px;height:9px;border-radius:2px;display:inline-block}
+  .cc .chev{margin-left:auto;font-size:13px;color:#9DB2B8;transition:transform .25s}
+  details.cc[open] .chev{transform:rotate(180deg)}
+  .cc-body{padding:2px 16px 16px}
+  .cc-meta{font-family:"Space Mono",monospace;font-size:11px;color:#8FA7AE;margin:2px 0 8px;letter-spacing:.02em}
+  .ccnote{font-size:12px;color:#E0B07A;line-height:1.5;margin-bottom:8px}
+  .cc-body ul{list-style:none}
+  .cc-body li{border-top:1px dashed rgba(255,255,255,.12)}
+  .cc-body li a{display:flex;align-items:flex-start;gap:9px;padding:9px 2px;text-decoration:none;color:#D4DDDF;font-size:13px;line-height:1.45;transition:color .15s}
+  .cc-body li a:hover{color:#fff}
+  .cc-body li a:hover .ititle{text-decoration:underline}
+  .idot{width:8px;height:8px;border-radius:2px;flex:none;margin-top:6px}
+  .ititle{flex:1}
+  .iarrow{color:#6E848C;font-size:12px;flex:none}
+  .seeall{display:inline-block;margin-top:12px;font-family:"Space Mono",monospace;font-size:12px;color:var(--life);text-decoration:none;border:1px solid rgba(227,160,46,.4);border-radius:100px;padding:7px 14px}
+  .seeall:hover{background:rgba(227,160,46,.12)}
+  /* tile cartogram */
+  .cartowrap{margin:4px 0 24px}
+  .carto{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;max-width:430px;margin:6px auto}
+  .tile{aspect-ratio:1;border-radius:7px;cursor:pointer;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:2px;
+    background:color-mix(in srgb, var(--tc) calc(var(--op)*100%), #11313b);border:1px solid rgba(255,255,255,.12);
+    transition:transform .15s,box-shadow .15s;text-shadow:0 1px 2px rgba(0,0,0,.55)}
+  .tile:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 8px 18px -8px rgba(0,0,0,.6);z-index:3;position:relative}
+  .tile .tn{font-size:12px;font-weight:900;line-height:1.04;text-align:center;letter-spacing:-.02em}
+  .tile .tf{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:15px;line-height:1}
+  .carto-key{font-family:"Space Mono",monospace;font-size:12px;color:#9DB2B8;margin-top:11px;letter-spacing:.02em;line-height:1.6}
+  details.cc.flash{box-shadow:0 0 0 2px var(--life)}
+  @media(max-width:620px){.tile .tn{font-size:11px}.tile .tf{font-size:13px}}
+  footer{background:var(--ink-2);color:#9DB2B8;padding:46px 0 56px;font-size:13px;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer a{color:var(--life);text-decoration:none}
+  footer .mono{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;line-height:1.9}
+  footer h5{color:#fff;font-size:14px;margin-bottom:8px;font-weight:700}
+  .reveal{transition:opacity .6s ease,transform .6s ease}
+  .js .reveal{opacity:0;transform:translateY(18px)}
+  .js .reveal.in{opacity:1;transform:none}
+  @media(max-width:880px){.cards{grid-template-columns:1fr 1fr}}
+  @media(max-width:620px){section{padding:48px 0}.cards{grid-template-columns:1fr}.ccards{column-count:1}.hero-stats{gap:22px}.dist-row{grid-template-columns:56px 1fr 36px}}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.dist-bar i{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span>FORWARD-LOOKING INFRASTRUCTURE</span><span>建設成效・全臺實錄</span></div>
+    <h1>建設亮點，<br><em>遍地開花</em></h1>
+    <p class="lede">從全國性的 20 大代表作，到我家鄉的那一座，逐一展開。</p>
+    <div class="hero-stats">
+      <div class="hstat"><div class="n" data-count="22">22<small>縣市</small></div><div class="l">建設遍及全臺</div></div>
+      <div class="hstat"><div class="n" data-count="2300">2,300<small>＋ 項</small></div><div class="l">官網收錄建設成果（估）</div></div>
+      <div class="hstat"><div class="n">8<small>大類</small></div><div class="l">軌道到人才．全面布局</div></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">二十大亮點</div>
+      <h2>20 個讓人有感的代表作</h2>
+      <p>依主題分為生活、人文、科技三類，每項標出關鍵投入與成果。</p>
+    </div>
+    <div class="legend reveal">
+      <b><i style="background:var(--life)"></i>生活</b><b><i style="background:var(--human)"></i>人文</b><b><i style="background:var(--tech)"></i>科技</b>
+    </div>
+    
+    <div class="grp-head reveal"><div class="gn" style="color:var(--life)">生活</div><div class="gl" style="background:var(--life)"></div><div class="gt">交通 · 水資源 · 防災 · 觀光</div></div>
+    <div class="cards">
+      <div class="card l-life reveal"><div class="ct"><b>軌道</b> ｜ 01</div><h4>四大都會捷運路網完善</h4><div class="desc">淡海輕軌、安坑輕軌、台中綠線、高雄環狀輕軌陸續通車，串聯臺鐵高鐵轉乘。</div><div class="fig"><div class="v">2024<small>/1</small></div><div class="k">高雄環狀輕軌全線通車</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>軌道</b> ｜ 02</div><h4>鐵道立體化</h4><div class="desc">台南、桃園地下化與嘉義高架化，消除平交道、縫合鐵道兩側都市發展。</div><div class="fig"><div class="v">372.58<small>億</small></div><div class="k">投入經費</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>軌道</b> ｜ 03</div><h4>南迴電氣化＋花東雙軌</h4><div class="desc">補上環島鐵路電氣化最後一哩，109年完成南迴全線123.4公里。</div><div class="fig"><div class="v">276<small>億</small></div><div class="k">南迴電氣化（另花東雙軌63.5億）</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>水環境</b> ｜ 04</div><h4>阿姆坪防淤隧道</h4><div class="desc">延長石門水庫壽命，颱洪時以水力沖淤、還砂於河，減少清淤成本。</div><div class="fig"><div class="v">20<small>萬 m³</small></div><div class="k">單次沖淤 ≈ 1.6萬輛砂石車</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>水環境</b> ｜ 05</div><h4>鳥嘴潭人工湖</h4><div class="desc">引烏溪水蓄豐濟枯，緩解彰化地層下陷，確保民生與產業供水。</div><div class="fig"><div class="v">25<small>萬噸/日</small></div><div class="k">供應彰化21萬＋草屯4萬噸</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>水環境</b> ｜ 06</div><h4>1+2 三大聯通管</h4><div class="desc">翡翠原水管、桃竹備援、曾文南化聯通，2021大旱支援新竹、護住晶片產線。</div><div class="fig"><div class="v">22.5<small>萬噸/日</small></div><div class="k">大旱時支援新竹高科技用水</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>城鄉</b> ｜ 07</div><h4>公有危險建築補強重建</h4><div class="desc">提升88年底前老舊公有建築耐震，零售公有市場逾半已評估補強。</div><div class="fig"><div class="v">130<small>億</small></div><div class="k">耐震提升經費</div></div></div>
+      <div class="card l-life reveal"><div class="ct"><b>城鄉</b> ｜ 08</div><h4>觀光升級</h4><div class="desc">東北角、日月潭、阿里山等6大國家風景區重新包裝，迎接疫後旅遊。</div><div class="fig"><div class="v">47.87<small>億</small></div><div class="k">投入 · 6大魅力景區</div></div></div>
+    </div>
+    <div class="grp-head reveal"><div class="gn" style="color:var(--human)">人文</div><div class="gl" style="background:var(--human)"></div><div class="gt">地方 · 族群 · 長照 · 教育 · 育兒 · 文化</div></div>
+    <div class="cards">
+      <div class="card l-human reveal"><div class="ct"><b>城鄉</b> ｜ 09</div><h4>地方創生 2.0</h4><div class="desc">統合跨部會資源、設青年培力站、活化公有空間，朝「均衡臺灣」前進。</div><div class="fig"><div class="v">60<small>億</small></div><div class="k">110–114年 5年計畫</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>城鄉</b> ｜ 10</div><h4>客庄 369 建設</h4><div class="desc">世界客家博覽會首度登場，充實在地產業基礎、帶動青年返鄉。</div><div class="fig"><div class="v">140<small>億</small></div><div class="k">客博會帶動周邊產值（估）</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>城鄉</b> ｜ 11</div><h4>原民部落營造</h4><div class="desc">路平、燈亮、水溝通，改善部落安全設施與道路排水、設健康站。</div><div class="fig"><div class="v">481<small>站</small></div><div class="k">長者健康站（另近60億投入）</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>城鄉</b> ｜ 12</div><h4>長輩樂齡</h4><div class="desc">迎接114年超高齡社會，推動每國中學區設日照中心、普及長照。</div><div class="fig"><div class="v">95.49<small>億</small></div><div class="k">多元連續照顧服務投入</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>城鄉</b> ｜ 13</div><h4>班班有冷氣</h4><div class="desc">僅1年半完成全國中小學冷氣裝設與電力改善，並建能源管理系統。</div><div class="fig"><div class="v">186,064<small>台</small></div><div class="k">3,584校冷氣（投入230億）</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>人才</b> ｜ 14</div><h4>雙語及人才培育</h4><div class="desc">推動2030雙語政策，加上數位、國際產學、高階人才等培育計畫。</div><div class="fig"><div class="v">120<small>億</small></div><div class="k">2030雙語政策計畫</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>少子化</b> ｜ 15</div><h4>友善育兒環境</h4><div class="desc">以社區為基礎推動公共托育、公共化幼兒園，公托一位難求要抽籤。</div><div class="fig"><div class="v">73.83<small>億</small></div><div class="k">育兒支持設施投入</div></div></div>
+      <div class="card l-human reveal"><div class="ct"><b>城鄉</b> ｜ 16</div><h4>文化生活圈</h4><div class="desc">推動文化生活圈與國家文化記憶庫，讓歷史建物與當代生活結合。</div><div class="fig"><div class="v">313<small>億</small></div><div class="k">文化生活圈建設投入</div></div></div>
+    </div>
+    <div class="grp-head reveal"><div class="gn" style="color:var(--tech)">科技</div><div class="gl" style="background:var(--tech)"></div><div class="gt">產業 · 半導體 · 5G · 淨零</div></div>
+    <div class="cards">
+      <div class="card l-tech reveal"><div class="ct"><b>城鄉</b> ｜ 17</div><h4>產業園區</h4><div class="desc">活化工業區土地、發展城鄉特色產業園區，讓在地青年就近就業。</div><div class="fig"><div class="v">246.8<small>億</small></div><div class="k">工業區活化與園區發展</div></div></div>
+      <div class="card l-tech reveal"><div class="ct"><b>數位</b> ｜ 18</div><h4>布局下一世代半導體</h4><div class="desc">Å世代半導體計畫培育高階人才、促成產學合作，鞏固國際戰略地位。</div><div class="fig"><div class="v">1,600<small>億+</small></div><div class="k">吸引國際大廠來臺研發投資</div></div></div>
+      <div class="card l-tech reveal"><div class="ct"><b>數位</b> ｜ 19</div><h4>擴大 5G 建設及應用</h4><div class="desc">加速加量建置5G基地臺，87個偏鄉全建置、打造國家級雲端資料中心。</div><div class="fig"><div class="v">96.5<small>%</small></div><div class="k">非偏鄉人口5G涵蓋率（111年底）</div></div></div>
+      <div class="card l-tech reveal"><div class="ct"><b>綠能</b> ｜ 20</div><h4>淨零及能源轉型</h4><div class="desc">第4期編列102億推動淨零十二項戰略，並強化電網韌性與儲能。</div><div class="fig"><div class="v">102<small>億</small></div><div class="k">第4期淨零轉型預算</div></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="counties">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">全臺 22 縣市實錄</div>
+      <h2>我的家鄉蓋了什麼</h2>
+      <p class="carto-key">顏色＝主要建設類型　·　深淺＝規模（逾N項）　·　點格子看該縣市 ↓</p>
+    </div>
+    <div class="cartowrap reveal"><div class="carto" role="group" aria-label="全臺建設方格地圖"><button class="tile" data-cy="22" style="grid-row:1;grid-column:3;--tc:#E3A02E;--op:0.5" title="連江縣·主要類型:城鄉·逾75項"><span class="tn">連江縣</span><span class="tf">75</span></button><button class="tile" data-cy="01" style="grid-row:2;grid-column:5;--tc:#E3A02E;--op:0.57" title="基隆市·主要類型:城鄉·逾90項"><span class="tn">基隆市</span><span class="tf">90</span></button><button class="tile" data-cy="02" style="grid-row:2;grid-column:4;--tc:#E3A02E;--op:0.57" title="台北市·主要類型:城鄉·逾90項"><span class="tn">台北市</span><span class="tf">90</span></button><button class="tile" data-cy="03" style="grid-row:3;grid-column:4;--tc:#1F94AB;--op:0.71" title="新北市·主要類型:軌道·逾120項"><span class="tn">新北市</span><span class="tf">120</span></button><button class="tile" data-cy="04" style="grid-row:3;grid-column:5;--tc:#E3A02E;--op:0.64" title="宜蘭縣·主要類型:城鄉·逾105項"><span class="tn">宜蘭縣</span><span class="tf">105</span></button><button class="tile" data-cy="07" style="grid-row:3;grid-column:3;--tc:#E3A02E;--op:0.86" title="桃園市·主要類型:城鄉·逾150項"><span class="tn">桃園市</span><span class="tf">150</span></button><button class="tile" data-cy="05" style="grid-row:4;grid-column:2;--tc:#E3A02E;--op:0.57" title="新竹市·主要類型:城鄉·逾90項"><span class="tn">新竹市</span><span class="tf">90</span></button><button class="tile" data-cy="06" style="grid-row:4;grid-column:3;--tc:#E3A02E;--op:0.64" title="新竹縣·主要類型:城鄉·逾105項"><span class="tn">新竹縣</span><span class="tf">105</span></button><button class="tile" data-cy="21" style="grid-row:4;grid-column:1;--tc:#E3A02E;--op:0.5" title="金門縣·主要類型:城鄉·逾75項"><span class="tn">金門縣</span><span class="tf">75</span></button><button class="tile" data-cy="08" style="grid-row:5;grid-column:3;--tc:#E3A02E;--op:0.71" title="苗栗縣·主要類型:城鄉·逾120項"><span class="tn">苗栗縣</span><span class="tf">120</span></button><button class="tile" data-cy="09" style="grid-row:5;grid-column:4;--tc:#4F9E78;--op:0.71" title="台中市·主要類型:水環境·逾120項"><span class="tn">台中市</span><span class="tf">120</span></button><button class="tile" data-cy="19" style="grid-row:5;grid-column:5;--tc:#E3A02E;--op:0.57" title="花蓮縣·主要類型:城鄉·逾90項"><span class="tn">花蓮縣</span><span class="tf">90</span></button><button class="tile" data-cy="10" style="grid-row:6;grid-column:3;--tc:#E3A02E;--op:0.71" title="彰化縣·主要類型:城鄉·逾120項"><span class="tn">彰化縣</span><span class="tf">120</span></button><button class="tile" data-cy="11" style="grid-row:6;grid-column:4;--tc:#E3A02E;--op:0.57" title="南投縣·主要類型:城鄉·逾90項"><span class="tn">南投縣</span><span class="tf">90</span></button><button class="tile" data-cy="20" style="grid-row:6;grid-column:1;--tc:#E3A02E;--op:0.57" title="澎湖縣·主要類型:城鄉·逾90項"><span class="tn">澎湖縣</span><span class="tf">90</span></button><button class="tile" data-cy="14" style="grid-row:7;grid-column:3;--tc:#E3A02E;--op:0.64" title="雲林縣·主要類型:城鄉·逾105項"><span class="tn">雲林縣</span><span class="tf">105</span></button><button class="tile" data-cy="13" style="grid-row:7;grid-column:4;--tc:#E3A02E;--op:0.64" title="嘉義縣·主要類型:城鄉·逾105項"><span class="tn">嘉義縣</span><span class="tf">105</span></button><button class="tile" data-cy="12" style="grid-row:8;grid-column:3;--tc:#E3A02E;--op:0.5" title="嘉義市·主要類型:城鄉·逾75項"><span class="tn">嘉義市</span><span class="tf">75</span></button><button class="tile" data-cy="15" style="grid-row:8;grid-column:4;--tc:#E3A02E;--op:0.79" title="台南市·主要類型:城鄉·逾135項"><span class="tn">台南市</span><span class="tf">135</span></button><button class="tile" data-cy="18" style="grid-row:8;grid-column:5;--tc:#E3A02E;--op:0.64" title="台東縣·主要類型:城鄉·逾105項"><span class="tn">台東縣</span><span class="tf">105</span></button><button class="tile" data-cy="16" style="grid-row:9;grid-column:4;--tc:#E3A02E;--op:1.0" title="高雄市·主要類型:城鄉·逾180項"><span class="tn">高雄市</span><span class="tf">180</span></button><button class="tile" data-cy="17" style="grid-row:10;grid-column:4;--tc:#E3A02E;--op:0.79" title="屏東縣·主要類型:城鄉·逾135項"><span class="tn">屏東縣</span><span class="tf">135</span></button></div></div>
+    <div class="legend reveal"><b><i style="background:#1F94AB"></i>軌道</b><b><i style="background:#4F9E78"></i>水環境</b><b><i style="background:#9FC24A"></i>綠能</b><b><i style="background:#5E8BE0"></i>數位</b><b><i style="background:#E3A02E"></i>城鄉</b><b><i style="background:#E07BA6"></i>少子化</b><b><i style="background:#C2603F"></i>食安</b><b><i style="background:#9A7BD0"></i>人才</b></div>
+    <div class="county-toolbar reveal">
+      <button class="toggle-all" id="toggleAll" type="button">全部展開</button>
+      <span class="hint">點縣市展開 · 點項目開官網查證</span>
+    </div>
+    <div class="region reveal">
+      <div class="region-head"><div class="rn" style="color:#1F94AB">北區 NORTH</div><div class="rc">// 6 縣市</div></div>
+      <div class="ccards">
+      <details class="cc" id="cc-01">
+  <summary>
+    <span class="city">基隆市</span>
+    <span class="badge">逾 90 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 2 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=071430IzdvdMmK6f&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">基隆山海城串聯再造計畫工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=185901KihsAhWcE7&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">國門廣場工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=190122rzU14ukKH5&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">基隆東岸郵輪廣場串接工程及市區範圍工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=200912Zy4XGq9u23&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">希望之丘山城社區通廊系統建構計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=215209rpCAnH0M3H&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">強化大武崙工業區周邊區域排水計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=214525EyDKkrijWt&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">基隆市八斗子漁港智慧漁業創新場域營造計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=062815s5Yt6x2H7t&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－基隆市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=043415eQhFShuYhY&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">大基隆歷史場景再現整合計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=145930n7Lzgi3AgM&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">長潭漁港及望海巷漁港轉型優化工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=103509YA13sx2H8g&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">暖東峽谷環山遊憩步道改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=115240S2yBMfuYXd&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">海洋觀光計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=153516JC9YLrsuZh&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">基隆市公立高級中等以下學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=140103tdUkCW65vy&amp;cy=01&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">基隆市－校園社區化改造</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-nouthern.php?cy=01" target="_blank" rel="noopener">在官網看基隆市全部（官網共 7 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-03">
+  <summary>
+    <span class="city">新北市</span>
+    <span class="badge">逾 120 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=111535eiQ8knzsZj&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">捷運萬大－中和－樹林線規劃</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=112808MwUmBJVg3c&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">捷運環狀線北環段及南環段</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=155923v7kbSFxL7F&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">翡翠原水管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=215408f7WBjy0izS&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">新店區寶高智慧產業園區設置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=110809Lcpyuj6aCw&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">捷運三鶯線暨周邊土地開發計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=1357427jbLwgFbyg&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵桃園段地下化建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=104408MDVHA0CDH2&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">淡海輕軌運輸系統計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=092041wdcCZdxWEJ&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">安坑線輕軌運輸系統暨周邊土地開發計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=030951aQR4he3Rzx&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">鴨母港溝補注水處理工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=140547Sm52vYfarQ&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">全國水環境改善－大漢溪、新店溪、淡水河系</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=062540QkIxZggiH8&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－新北市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=141209Pmcn0j8T0U&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高鐵延伸宜蘭、屏東規劃作業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=03&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-nouthern.php?cy=03" target="_blank" rel="noopener">在官網看新北市全部（官網共 9 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-02">
+  <summary>
+    <span class="city">台北市</span>
+    <span class="badge">逾 90 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:1"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:1"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 6 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=112808MwUmBJVg3c&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺北都會區大眾捷運系統環狀線北環段及南環段</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=155923v7kbSFxL7F&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">翡翠原水管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=06&amp;nid=110505Jn6zwqHn5Q&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9A7BD0" title="人才"></span><span class="ititle">青年科技創新創業基地建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=01&amp;nid=114641UPKU0pDjfn&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#C2603F" title="食安"></span><span class="ititle">興建現代化食品藥物國家級實驗大樓</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=213809t1Bbh9ARn0&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">中研院鋰電池儲能系統與新世代全固態電池</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=2159470zRN4Ws5ID&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">建置分散式區域規模大型儲能系統．推動綠能產業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=200635pi35zm7BsT&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">忠孝東路東西軸線及周邊人行環境改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=143044MD5ZdBtbHM&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台北市學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0623404uiuEY24PU&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－台北市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=142804AZFNMTjETW&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台北市－校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=141209Pmcn0j8T0U&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高鐵延伸宜蘭、屏東規劃作業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=151109RKPHX8pcPU&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">第2屆浪漫臺三線藝術季—花啦嗶啵</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0940387p9HV5xbbP&amp;cy=02&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－台北市</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-nouthern.php?cy=02" target="_blank" rel="noopener">在官網看台北市全部（官網共 7 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-07">
+  <summary>
+    <span class="city">桃園市</span>
+    <span class="badge">逾 150 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 4 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144108EkYMaqsAtL&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">小烏來風景特定區污水下水道系統計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=104000ML4gVdqUFb&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">世界客家博覽會</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1619357y24KDSM3H&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">魅力新桃園</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=094601jjZYZZcR9Z&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">桃園捷運綠線（航空城捷運線）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=1357427jbLwgFbyg&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵桃園段地下化建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153625Z7aWCJumxu&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">桃園新竹備援管線工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1409316KNXnXjzQX&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">桃林鐵路路廊周邊環境改善計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=151351JvU5LUC8zD&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">石門水庫阿姆坪防淤隧道工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=1444070pucrCFsCC&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">魚管處滯洪池工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0629328IaciDEjpB&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－桃園市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=223114h8i9Q6IgL9&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">綠能發配電智慧管理與效能提升技術發展計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112753kxNMgVF2YF&amp;cy=07&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄369幸福計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-nouthern.php?cy=07" target="_blank" rel="noopener">在官網看桃園市全部（官網共 11 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-05">
+  <summary>
+    <span class="city">新竹市</span>
+    <span class="badge">逾 90 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:1"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141916S2jYYzwEm5&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">新竹步行城市計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=103623WgQMN32SBM&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">十八尖山魅力旅遊據點營造工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=115604Y7hg9vxy4D&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">東大排水治理工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=143101m9fSx2hHn5&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">新竹市青草湖水岸環境改善</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=134918LBtiwfjM61&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">新竹地區防災及備援水井建置工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=063109269TMvDv8u&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－新竹市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=151328SNyInarvPP&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">新竹市－校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=091000SW9E2TsnAi&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－新竹市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=08&amp;nid=094856Da0bE0GULf&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E07BA6" title="少子化"></span><span class="ititle">增設華德福非營利幼兒園</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144017YC1nu2Ey6v&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強平地人工湖及伏流水推動計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=113541LP8UJ8dE0J&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客家浪漫臺三線計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=05&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-nouthern.php?cy=05" target="_blank" rel="noopener">在官網看新竹市全部（官網共 7 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-06">
+  <summary>
+    <span class="city">新竹縣</span>
+    <span class="badge">逾 105 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:1"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=133220fq6LRW7kUz&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄人文產業建設(3)－竹東客家文化大禾埕計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=174915Aci11bxNpp&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">浪漫新竹</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=072049JbvX9aH8iM&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">竹東之心中興河道水岸及城鎮步行空間再造計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144716S0h9KWfhvV&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">新豐垃圾掩埋場西側海岸防護作業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153625Z7aWCJumxu&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">桃園新竹備援管線工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=134918LBtiwfjM61&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">新竹地區防災及備援水井建置工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=103757ztjpY8Qxfs&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">鳳坑濱岸水域遊憩區服務設施整備工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=08&amp;nid=121311W654t47qkW&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E07BA6" title="少子化"></span><span class="ititle">新竹縣綜合社會福利館</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=151619Cenfy0vJ9b&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">新豐鄉建興路一段雨水下水道工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=172406vhXrpayMZW&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">竹北六張犁東興圳整體景觀再造工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=063226iZdrUIDDE5&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－新竹縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112753kxNMgVF2YF&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄369幸福計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=06&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-nouthern.php?cy=06" target="_blank" rel="noopener">在官網看新竹縣全部（官網共 8 頁）→</a>
+  </div>
+</details>
+      </div>
+    </div>
+<div class="region reveal">
+      <div class="region-head"><div class="rn" style="color:#4F9E78">中區 CENTRAL</div><div class="rc">// 5 縣市</div></div>
+      <div class="ccards">
+      <details class="cc" id="cc-08">
+  <summary>
+    <span class="city">苗栗縣</span>
+    <span class="badge">逾 120 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 2 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=104902WJgvUEB621&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">龍鳳、外埔漁港排水及環境整體營造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=105042ycP0VuVmPL&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">通霄溪伏流水工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=001246MXEATH1bXI&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">十三創意街區漫慢遊計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1517040bRwuHff8Y&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">第2屆浪漫臺三線藝術季—花啦嗶啵</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=104053jBv2zIK8bw&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">苗栗市聯大路周圍地區排水改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154247m6e1KBwj4G&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">苗栗縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=151940MmF4q9RQ7c&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">苗栗縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=193417pzpYXw32dP&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－苗栗縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=163350wTLZtS4pp2&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">再現苗栗新風貌</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144017YC1nu2Ey6v&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強平地人工湖及伏流水推動計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112753kxNMgVF2YF&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄369幸福計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=113541LP8UJ8dE0J&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客家浪漫臺三線計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=08&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-central.php?cy=08" target="_blank" rel="noopener">在官網看苗栗縣全部（官網共 9 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-09">
+  <summary>
+    <span class="city">台中市</span>
+    <span class="badge">逾 120 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 4 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=11413763ZWpcqJbf&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">水湳再生水工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=110018wU7BeCt1Px&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">臺中市大里區大峰路防災公園工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=144439Wx3jhYIWDP&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">城鎮之心鐵道綠廊潭心計畫工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=213554d92LPYP68E&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">臺中港離岸風電產業專區</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=11451853nDPRjqNW&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵成功追分段鐵路雙軌化新建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=113652SnnsPvndIk&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">台中地區防災及備援水井建置工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0939219bcmzENwiu&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－台中市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=151543LDffVtas2w&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台中市學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=063519wGFI0ES9Qp&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－台中市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144017YC1nu2Ey6v&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強平地人工湖及伏流水推動計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=15250593Q5Bnn0YP&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">再生水開發工程（水湳、仁德、臨海）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=164827FIcPkK4swy&amp;cy=09&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台中客庄再造</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-central.php?cy=09" target="_blank" rel="noopener">在官網看台中市全部（官網共 9 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-11">
+  <summary>
+    <span class="city">南投縣</span>
+    <span class="badge">逾 90 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1549013ttT3LxZ4H&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">南投縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1533451kU7eccwLN&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">南投縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153805FrkxM98aaq&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">烏溪鳥嘴潭人工湖工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=115542DCg8u8E9WP&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵集集支線基礎設施改善計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=104954bUcmeNGMn1&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">日月潭碼頭設施系統化建置工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=202236BL5WyHbAR6&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">東埔溫泉區景觀風貌形塑與生活環境路網整合</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=004422NUsqsp28fj&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">南投豬事文化園區創新場域營造計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=152042kaBqrif2Pe&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">魚池鄉水社活動中心拆除重建</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=135305fqV5fIbRpS&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">埔里鎮雨水下水道系統改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=003643Ej4gItuFdq&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">南投縣草屯手工藝智慧產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=084703cr8bRXPp0N&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－南投縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=194146k5md1YR4VT&amp;cy=11&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－南投縣</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-central.php?cy=11" target="_blank" rel="noopener">在官網看南投縣全部（官網共 7 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-10">
+  <summary>
+    <span class="city">彰化縣</span>
+    <span class="badge">逾 120 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=104006r3Zsu4hv4k&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高鐵彰化站與臺鐵轉乘接駁計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154706U5JfMRJLRm&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">彰化縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=115542DCg8u8E9WP&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵集集支線基礎設施改善計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=144817XmhHt0B61G&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">溪湖綠色生活基盤營造計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0030068Zkf6zM61A&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">彰濱離岸風電運維基地計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=1124249QDYFRbLPD&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">鹿港溪水環境改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=11142441vM8MuA5n&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">八堡一圳、二圳幹線改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=114741GuHvaXSG3M&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">王功港區環境營造及王功景觀橋</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=163151U9UFZCcSQw&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">龍燈公園滯洪池工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134913G2e79gJda3&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">彰化市民權公有零售市場補強工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144017YC1nu2Ey6v&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強平地人工湖及伏流水推動計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=153028iKFB05mvcG&amp;cy=10&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">彰化縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-central.php?cy=10" target="_blank" rel="noopener">在官網看彰化縣全部（官網共 9 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-14">
+  <summary>
+    <span class="city">雲林縣</span>
+    <span class="badge">逾 105 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=155149riEu1BZKXF&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">雲林縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=153722cg3neJzWt2&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">雲林縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=19430738EWZX89wV&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－雲林縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=045422KybnxEc1um&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">圓夢尖兵布袋戲植根推廣計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=145849R5KtZcrRWE&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">璀璨斗南之心新建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=202355wpb5BGETZL&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">虎尾及北港朝天宮周邊街道系統整合串接改善計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=155017bhEEDX2ESK&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">湖山水庫第二原水管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=144554N3dP9nkQEL&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">馬公厝大排治理前瞻計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=105716YM4uMTjxtT&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">石壁竹創森景觀工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=004636IuzuhxsXNP&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">雲林縣金水164創新城鄉特色產業場域推動計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=135340zQBxUaUNe7&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">牛挑灣溪排水治理</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=223114h8i9Q6IgL9&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">綠能發配電智慧管理與效能提升技術發展計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=14&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-central.php?cy=14" target="_blank" rel="noopener">在官網看雲林縣全部（官網共 8 頁）→</a>
+  </div>
+</details>
+      </div>
+    </div>
+<div class="region reveal">
+      <div class="region-head"><div class="rn" style="color:#E3A02E">南區 SOUTH</div><div class="rc">// 5 縣市</div></div>
+      <div class="ccards">
+      <details class="cc" id="cc-12">
+  <summary>
+    <span class="city">嘉義市</span>
+    <span class="badge">逾 75 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=105928b62mpx61hg&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">嘉義市區鐵路高架化計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=153938SbUx8DrvDh&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義市學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154151t0EDfseHgj&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義市校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=202517assRK6Gk3G&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義市區自行車道串連與優化及人本環境建構計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=140124Rvig5b7BJd&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">嘉義縣市鐵路高架化延伸計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=091458qrs10SHKtt&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－嘉義市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=0933291iic58yE15&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">阿里山林業鐵路設施設備安全提升計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=150222N80DeMTJ7d&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">步行散策 樂活水岸改善</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=145928bkVGr7JsHV&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">埤麻腳排水水質改善暨水岸環境再造工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=043710QmqRiiBGTS&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義市立美術館提升計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=110342Nv3XMqL6XN&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">蘭潭水庫周邊步行休憩廊帶營造與改善計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1539295TpFT8aLRf&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義市政府警察局第二分局補強工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0657530h9Du2N7EW&amp;cy=12&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－嘉義市</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-southern.php?cy=12" target="_blank" rel="noopener">在官網看嘉義市全部（官網共 6 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-13">
+  <summary>
+    <span class="city">嘉義縣</span>
+    <span class="badge">逾 105 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=155413FGRjK1hqf0&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=105928b62mpx61hg&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">嘉義市區鐵路高架化計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154719PJ1F7LaPnP&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=194409WDnpkmU5Vn&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－嘉義縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=140124Rvig5b7BJd&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">嘉義縣市鐵路高架化延伸計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=140421zXhA8cNDis&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">嘉義蒜頭糖廠至故宮南院觀光鐵路計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0101064dTSxMX80M&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義縣水產精品加值產業園區</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=0933291iic58yE15&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">阿里山林業鐵路設施設備安全提升計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=202646aSfSLws1gv&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">中埔鄉慢行綠廊道路及環境景觀改善雙亮點計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=143252z68pjQe1Tf&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">東石漁港水環境改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=110103EqgycGYe6m&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">奮起湖山城風貌營造工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141246tHLZgzqZM8&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">嘉義縣警察局局本部行政大樓補強工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=13&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-southern.php?cy=13" target="_blank" rel="noopener">在官網看嘉義縣全部（官網共 8 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-15">
+  <summary>
+    <span class="city">台南市</span>
+    <span class="badge">逾 135 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=151847ZeQMGT1wSu&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台南市學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1945141FebW6zJB6&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－台南市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=094412zWhf2kmmiu&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－台南市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=094301PwFiwB5py3&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台南市創新育成基地計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=005003uPZ8Vbj5uL&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">臺南市沙崙健康產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=2159470zRN4Ws5ID&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">建置分散式區域規模大型儲能系統．推動綠能產業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=15250593Q5Bnn0YP&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">再生水開發工程（水湳、仁德、臨海）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=155232A73cjhzVIj&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台南市校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0638194S42quMmTh&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－台南市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=164838wJkEIRdh2Q&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台南市充實全民運動環境計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=15053849UwGa5aFh&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">台南山上淨水場供水系統改善工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=1511426E3KnyWsza&amp;cy=15&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">白河水庫後續更新改善工程</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-southern.php?cy=15" target="_blank" rel="noopener">在官網看台南市全部（官網共 10 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-16">
+  <summary>
+    <span class="city">高雄市</span>
+    <span class="badge">逾 180 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 4 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=152718eBpAGQ2jc4&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">高雄市學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=063942dd5zLSxcex&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－高雄市</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=095748YaGqDk5GBq&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高雄捷運岡山路竹延伸線（第一階段）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=102752C5e5uCZ97g&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高雄捷運都會線（黃線）建設</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=101110WNeSfzw6UJ&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高雄捷運岡山路竹延伸線（第二階段）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=211924KV99ysppe6&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">高雄海洋科技產業創新專區及公建計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0947155rmweIhgWz&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">仁武產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=044312ZIgDL1Wsng&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">內惟藝術中心—跨域築憶‧典藏南方</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154127DQX1cKXU59&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">旗津區第二條過港送水管工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=094833mr2IKSCIrb&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">臨海工業區市管及聯外道路改善計畫（中山沿海路）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=141209Pmcn0j8T0U&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高鐵延伸宜蘭、屏東規劃作業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=15250593Q5Bnn0YP&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">再生水開發工程（水湳、仁德、臨海）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154515J6Z7mkhvJI&amp;cy=16&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">備援調度幹管工程計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-southern.php?cy=16" target="_blank" rel="noopener">在官網看高雄市全部（官網共 13 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-17">
+  <summary>
+    <span class="city">屏東縣</span>
+    <span class="badge">逾 135 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:1"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 4 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=155822M1BWI6Tdt0&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">屏東縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=153905P72dw5z1A8&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄人文產業建設(7)－六鄉鎮圖書館</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1527389pUFddqQji&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">殺蛇溪－生活心樂章工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=115154V05EL64Z4P&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵南迴鐵路臺東潮州段電氣化工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1907558em685uZEI&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">興建琉球新船運中心</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0957013vw8im16mF&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">屏東科技產業園區（擴區）計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=08&amp;nid=121250d8TtQNPWMv&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E07BA6" title="少子化"></span><span class="ititle">建構0-2歲兒童社區公共托育計畫（屏東縣東港鎮）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=170844SSEAe7TuBf&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">牛埔溪排水治理工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=0444479s55TFB74P&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">屏東藝術館專業展演劇場升級整建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=125602ghqsqPP5cz&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">萬年溪水環境營造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=08&amp;nid=1211249eImZ8AEvk&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E07BA6" title="少子化"></span><span class="ititle">建構0-2歲兒童社區公共托育計畫（屏東縣恆春鎮）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=124038r4wyV63A2K&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">屏東縣新埤鄉提升道路品質計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=141209Pmcn0j8T0U&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高鐵延伸宜蘭、屏東規劃作業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153022HG0PZ52nc9&amp;cy=17&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">防災及備援水井建置計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-southern.php?cy=17" target="_blank" rel="noopener">在官網看屏東縣全部（官網共 10 頁）→</a>
+  </div>
+</details>
+      </div>
+    </div>
+<div class="region reveal">
+      <div class="region-head"><div class="rn" style="color:#C45A4A">東區 EAST</div><div class="rc">// 3 縣市</div></div>
+      <div class="ccards">
+      <details class="cc" id="cc-04">
+  <summary>
+    <span class="city">宜蘭縣</span>
+    <span class="badge">逾 105 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=065337K1a1bGYXX6&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－宜蘭縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=071821TNrx3RstTm&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－宜蘭縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154135ijbafeCLtw&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">礁溪生活之心工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=203606LUQxZpPxIA&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">宜蘭溪南綠色轉運亮點計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=063130UNpv5bP5v2&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">蘇澳港旅運服務設施工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=115427iX5KVCzDRc&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">茅埔排水改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=053249t53SRm4xhh&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">冬山鄉溪南綠色生態旅遊基地</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=115050qnbcEMgzgh&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">砂仔港二號抽水站新建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=135333SPx2AWkNbr&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">宜蘭縣－校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=20562938tP331WAi&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">宜蘭一結工業區</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=141209Pmcn0j8T0U&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">高鐵延伸宜蘭、屏東規劃作業</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=160009IdKULpTgvI&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">宜蘭縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1949172Yzqy6CeM4&amp;cy=04&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－宜蘭縣</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-eastern.php?cy=04" target="_blank" rel="noopener">在官網看宜蘭縣全部（官網共 8 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-18">
+  <summary>
+    <span class="city">台東縣</span>
+    <span class="badge">逾 105 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 4 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=203727ECNPSfwdem&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台東車站門戶道路景觀提升計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154534d73t5ygG11&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">城鎮之心南迴驛建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=092832jaCCbkwW0B&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">花東地區鐵路雙軌電氣化計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=115154V05EL64Z4P&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">臺鐵南迴鐵路臺東潮州段電氣化工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112028AR3NrVaKJj&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">東海岸海洋環境教室多功能服務設施改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=044024QTJhbU1ctJ&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">國立臺灣史前文化博物館典藏充實及館舍增建</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112339w60BAxB8jR&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">綠島多元主題旅遊設施優化工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=160437U2Q5GejHSA&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台東縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1622430R9APBFL5v&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">台東縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=170649rDWJJ9F54T&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">太平溪治理工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=154307pZ0kqMAWbZ&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">深層海水取水工程計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=21400927EwxSxiFr&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">加速全面性地熱資源探查及資訊供應計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112753kxNMgVF2YF&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄369幸福計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=115240S2yBMfuYXd&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">海洋觀光計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=18&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-eastern.php?cy=18" target="_blank" rel="noopener">在官網看台東縣全部（官網共 8 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-19">
+  <summary>
+    <span class="city">花蓮縣</span>
+    <span class="badge">逾 90 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:1"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:0.18"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:1"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=195221fY1nJQinUm&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－花蓮縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=072024qAiSKSwgD8&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－花蓮縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=160157b55GVvg3SD&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">花蓮縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=02&amp;nid=092832jaCCbkwW0B&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#1F94AB" title="軌道"></span><span class="ititle">花東地區鐵路雙軌電氣化計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=165154HPQXK1TPuT&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">花蓮縣警察局警勤科技大樓暨綜合大樓新建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=044925MpAabuCGSQ&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">花蓮鐵道電影院計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1118269pFG9FBc9i&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">七星潭及鯉魚潭觀光自行車步道路廊營造計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=203248DNFQiwId7I&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">太平洋左岸宜居城市－美崙綠網營造計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=100011qSy3iNBTCF&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">洄瀾宜居微型創業平臺計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=03&amp;nid=21400927EwxSxiFr&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#9FC24A" title="綠能"></span><span class="ititle">加速全面性地熱資源探查及資訊供應計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112753kxNMgVF2YF&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄369幸福計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1631508XSkLd71Jg&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">花蓮縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=104729L1mzP8putH&amp;cy=19&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">客庄人文產業建設(1)－六堆及臺九線</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-eastern.php?cy=19" target="_blank" rel="noopener">在官網看花蓮縣全部（官網共 7 頁）→</a>
+  </div>
+</details>
+      </div>
+    </div>
+<div class="region reveal">
+      <div class="region-head"><div class="rn" style="color:#7A6CB5">離島區 ISLANDS</div><div class="rc">// 3 縣市</div></div>
+      <div class="ccards">
+      <details class="cc" id="cc-20">
+  <summary>
+    <span class="city">澎湖縣</span>
+    <span class="badge">逾 90 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 2 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=100503YXyyH7mh36&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">馬公山水濱海綠廊商圈開發計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=140550qCnE2RL5ES&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">澎湖七美鄉多功能長照服務據點</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=131637YL6Tty0GR9&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">離島地區供水改善計畫第二期</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=153702DqEeWRv8JF&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">山水、西衛污水處理廠效能提升暨放流水再利用工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=112548LIQ0n5yx0d&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">月鯉灣珊瑚海休憩區工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=204124Tt2pGE4IKe&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">馬公灣區新都心人行空間改善工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=1902462HFcN4RuGH&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">大倉新建浮動碼頭</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=160601gKpdKc0wz0&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">澎湖縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=195442Z5vAT7Jn4K&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">提升道路品質計畫(公路系統)－澎湖縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=165715tKr2hQrGHt&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">澎湖縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=16082538T3stVecY&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">離島地區供水改善計畫第二期（二）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=115240S2yBMfuYXd&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">海洋觀光計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=20&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-island.php?cy=20" target="_blank" rel="noopener">在官網看澎湖縣全部（官網共 7 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-21">
+  <summary>
+    <span class="city">金門縣</span>
+    <span class="badge">逾 75 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:0.18"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 2 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=160924T7tIqQDi5p&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">金門縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=065905VyAfCQZiYq&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－金門縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=173526RYuSmbXVFM&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">金沙溪治理工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=102003RLvSMFv6vn&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">金門縣浯江抽水站既有設施功能提升與更新汰換工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=104157yapLNySfc7&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">金門縣新湖及復國墩漁港水環境改善景觀工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=113123QgrFvXGXSH&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">光華園心戰園區整建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=113241wH1QbwgjKL&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">金湖鎮濱海觀光旅遊休憩區營造暨環境綠美化計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=203853nzyRY0HDXn&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">金門縣環島北路一段道路拓寬工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=164404dSXLDQiEc4&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">金門縣校園社區化改造</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=16082538T3stVecY&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">離島地區供水改善計畫第二期</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=084503cHAPdrQCW1&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－金門縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=171511WDMVfiifKc&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">金門縣充實全民運動環境計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=100132pccfs1nFJp&amp;cy=21&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">金門縣產遊博覽園區計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-island.php?cy=21" target="_blank" rel="noopener">在官網看金門縣全部（官網共 6 頁）→</a>
+  </div>
+</details>
+<details class="cc" id="cc-22">
+  <summary>
+    <span class="city">連江縣</span>
+    <span class="badge">逾 75 項</span>
+    <span class="tdots"><span class="tdot" title="軌道" style="background:#1F94AB;opacity:0.18"></span><span class="tdot" title="水環境" style="background:#4F9E78;opacity:1"></span><span class="tdot" title="綠能" style="background:#9FC24A;opacity:0.18"></span><span class="tdot" title="數位" style="background:#5E8BE0;opacity:0.18"></span><span class="tdot" title="城鄉" style="background:#E3A02E;opacity:1"></span><span class="tdot" title="少子化" style="background:#E07BA6;opacity:1"></span><span class="tdot" title="食安" style="background:#C2603F;opacity:0.18"></span><span class="tdot" title="人才" style="background:#9A7BD0;opacity:0.18"></span></span>
+    <span class="chev">▾</span>
+  </summary>
+  <div class="cc-body">
+    <div class="cc-meta">列出 15 項代表項目 · 3 類建設 · 點項目開官網</div>
+    
+    <ul>
+    <li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=070015VVyVdGD8z9&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">改善停車問題計畫(106~114年)－連江縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=161154wn5ZT1g4e2&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">連江縣學校電力改善暨冷氣裝設計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=090225V7IDgJ6EY5&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">營造休閒運動環境計畫－連江縣</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=154850bfBiIDS6nB&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">前瞻連江．城鎮之心計畫（福澳港）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=185229dtG5VMa8iz&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">F3浮動碼頭新建暨既有浮動碼頭修繕保養工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=185732XhwFrWsjJ8&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">猛澳碼頭區候船室暨服務中心新建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=204010GztFB1GUax&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">南竿珠螺村亮點暨型塑東引人文地景街區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=100645mFnBhIK7Ur&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">馬祖城鄉特色產業園區</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=08&amp;nid=121950vgvC0pUcbI&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E07BA6" title="少子化"></span><span class="ititle">建構0-2歲兒童社區公共托育計畫（連江縣莒光鄉）</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=113412IcXcg37eh6&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">北竿鄉大坵遊客中心興建工程</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=220709D9S6xxZ70b&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">加強水庫集水區保育治理計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=04&amp;nid=16082538T3stVecY&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#4F9E78" title="水環境"></span><span class="ititle">離島地區供水改善計畫第二期</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=115240S2yBMfuYXd&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">海洋觀光計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=134525h6S576mdpW&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">開發在地型產業園區計畫</span><span class="iarrow">↗</span></a></li>
+<li><a href="https://fi.ndc.gov.tw/result-content-county.php?rn=07&amp;nid=141830r4NUZGD1EG&amp;cy=22&amp;zi=" target="_blank" rel="noopener"><span class="idot" style="background:#E3A02E" title="城鄉"></span><span class="ititle">觀光前瞻建設計畫</span><span class="iarrow">↗</span></a></li>
+</ul>
+    <a class="seeall" href="https://fi.ndc.gov.tw/county-island.php?cy=22" target="_blank" rel="noopener">在官網看連江縣全部（官網共 6 頁）→</a>
+  </div>
+</details>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="mono">資料來源：國家發展委員會「前瞻基礎建設計畫施政亮點資訊網」（<a href="https://fi.ndc.gov.tw/" target="_blank" rel="noopener">fi.ndc.gov.tw</a>），各項目連官網查證；「逾 N 項」依官網頁數推估。<br>更新基準：2026/06/27 </p>
+  </div>
+</footer>
+<script>
+  document.documentElement.classList.add('js');
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.06,rootMargin:"0px 0px -4% 0px"});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  window.addEventListener('load',()=>{setTimeout(()=>{document.querySelectorAll('.reveal:not(.in)').forEach(e=>e.classList.add('in'));},1600);});
+  // distribution bars: animate from 0 to target width
+  document.querySelectorAll('.dist-bar i').forEach(i=>{const target=i.style.width;i.style.width='0';requestAnimationFrame(()=>requestAnimationFrame(()=>{i.style.width=target;}));});
+  const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function countUp(el){const t=parseFloat(el.dataset.count);const s=el.querySelector('small')?el.querySelector('small').outerHTML:'';if(reduce){el.innerHTML=t.toLocaleString('en-US')+s;return;}let st=null;function step(ts){if(!st)st=ts;const p=Math.min((ts-st)/1300,1);const v=Math.round(t*(1-Math.pow(1-p,3)));el.innerHTML=v.toLocaleString('en-US')+s;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+  const cio=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){countUp(e.target);cio.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+  const btn=document.getElementById('toggleAll');
+  if(btn){btn.addEventListener('click',()=>{const it=document.querySelectorAll('details.cc');const anyClosed=[...it].some(x=>!x.open);it.forEach(x=>x.open=anyClosed);btn.textContent=anyClosed?'全部收合':'全部展開';});}
+  document.querySelectorAll('.tile').forEach(t=>{t.addEventListener('click',()=>{
+    const det=document.getElementById('cc-'+t.dataset.cy);
+    if(det){det.open=true;det.scrollIntoView({behavior:'smooth',block:'center'});
+      det.classList.add('flash');setTimeout(()=>det.classList.remove('flash'),1600);}
+  });});
+</script>
+</body>
+</html>
